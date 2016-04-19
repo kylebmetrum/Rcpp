@@ -75,10 +75,11 @@ fibonacci(10)
 }
 
 \value{
-    Returns (invisibly) a list with two elements: 
+    Returns (invisibly) a list with three elements: 
     \tabular{ll}{
         \code{functions} \tab Names of exported functions\cr
         \code{modules} \tab Names of Rcpp modules\cr
+        \code{dynlib} \tab Pathname to the DLL 
     }
 }
 

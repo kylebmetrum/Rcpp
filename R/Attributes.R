@@ -190,9 +190,11 @@ sourceCpp <- function(file = "",
         source(file=srcConn, echo=TRUE)
     }
 
-    # return (invisibly) a list containing exported functions and modules
+    # return (invisibly) a list containing 
+    # exported functions, modules, and the pathname to the DLL
     invisible(list(functions = context$exportedFunctions,
-                   modules = context$modules))
+                   modules = context$modules,
+                   dynlib = file.path(context$buildDirectory,context$dynlibFilename)))
 }
 
 # Define a single C++ function
