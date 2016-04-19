@@ -79,7 +79,7 @@ fibonacci(10)
     \tabular{ll}{
         \code{functions} \tab Names of exported functions\cr
         \code{modules} \tab Names of Rcpp modules\cr
-        \code{dynlib} \tab Pathname to the DLL 
+        \code{dynlib} \tab Pathname to the DLL\cr 
     }
 }
 
